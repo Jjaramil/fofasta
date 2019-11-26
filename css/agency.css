@@ -169,14 +169,21 @@ img::-moz-selection {
     padding: 12px 0;
   }
 }
-
+.futbol-kids{
+  max-height: 262.5px;
+  min-width: 100%;
+}
+.img-fluid{
+  max-width: 100%;
+  height: auto;
+}
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/header-bg.jpg");
+  background-image: url("../img/3.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: center center;
+  background-position: center -290px;
   background-size: cover;
 }
 
