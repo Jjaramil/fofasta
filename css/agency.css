@@ -152,6 +152,7 @@ img::-moz-selection {
     border: none;
     background-color: transparent;
   }
+
   #mainNav .navbar-brand {
     font-size: 1.75em;
     transition: all 0.3s;
@@ -168,6 +169,18 @@ img::-moz-selection {
     font-size: 1.25em;
     padding: 12px 0;
   }
+}
+.map-responsive{
+  min-width: 100% ;
+  min-height: 100%;
+}
+.map-frame{
+  border:0;
+  width: 100%;
+  min-height: 450px;
+}
+.contact-row{
+  margin-bottom: 1%;
 }
 .futbol-kids{
   max-height: 262.5px;
