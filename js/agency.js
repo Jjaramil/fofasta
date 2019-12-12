@@ -2,6 +2,7 @@
   $('.carousel').carousel({
     interval: 4000
   })
+  $("#cookieModal").modal('toggle');
   "use strict"; // Start of use strict
 
   // Smooth scrolling using jQuery easing

@@ -1,12 +1,13 @@
 $(function() {
 
   $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
-    preventSubmit: true,
+    preventSubmit: false,
     submitError: function($form, event, errors) {
       // additional error messages or events
+      event.preventDefault(); 
     },
     submitSuccess: function($form, event) {
-      event.preventDefault(); // prevent default submit behaviour
+      //event.preventDefault(); // prevent default submit behaviour
       // get values from FORM
       var name = $("input#name").val();
       var email = $("input#email").val();
@@ -19,8 +20,8 @@ $(function() {
       }
       $this = $("#sendMessageButton");
       $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
-
-      $.ajax({
+      //("#contactForm").submit();
+    /*   $.ajax({
         url: "https://postman-echo.com/post",
         type: "POST",
         data: {
@@ -57,7 +58,7 @@ $(function() {
             $this.prop("disabled", false); // Re-enable submit button when AJAX call is complete
           }, 1000);
         }
-      });
+      }); */
     },
     filter: function() {
       return $(this).is(":visible");

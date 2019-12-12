@@ -96,13 +96,21 @@
   
   </header>
 
+
+  <section>
+     
+      <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src=" https://www.youtube.com/embed/KpT_HpDzCmQ" allowfullscreen></iframe>
+        </div>
+  </section>
+
   <!-- Services -->
   <section class="page-section" id="services">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Our Mission</h2>
-          <h3 class="section-subheading text-muted">Definir la misión de la FoFasta</h3>
+          <h3 class="section-subheading text-muted">the evangelization of culture, family and youth</h3>
         </div>
       </div>
       <div class="row text-center">
@@ -112,7 +120,7 @@
             <i class="fas fa-book-reader fa-stack-1x fa-inverse"></i>
           </span>
           <h4 class="service-heading">Culture</h4>
-          <p class="text-muted">Explicar la dimensión cultural en Inglés</p>
+          <!-- <p class="text-muted">Fofastas desir</p> -->
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
@@ -120,7 +128,7 @@
             <i class="fas fa-users fa-stack-1x fa-inverse"></i>
           </span>
           <h4 class="service-heading">Family</h4>
-          <p class="text-muted">Explicar la dimensión Familiar en Inglés</p>
+          <!-- <p class="text-muted">Explicar la dimensión Familiar en Inglés</p> -->
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
@@ -129,7 +137,7 @@
             <i class="fas fa-child fa-stack-1x fa-inverse"></i>
           </span>
           <h4 class="service-heading">Youth</h4>
-          <p class="text-muted">Explicar la dimensión juvenil de Fasta en Inglés</p>
+          <!-- <p class="text-muted">Explicar la dimensión juvenil de Fasta en Inglés</p> -->
         </div>
       </div>
     </div>
@@ -572,7 +580,7 @@ that it is adapted to the purposes, guidelines and criteria established in due c
       </div>
       <div class="row">
         <div class="col-lg-7 contact-row">
-          <form id="contactForm" name="sentMessage" novalidate="novalidate" >
+          <form id="contactForm" name="sentMessage" novalidate="novalidate" action="https://postman-echo.com/post" method="POST">
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
@@ -626,8 +634,8 @@ that it is adapted to the purposes, guidelines and criteria established in due c
         <div class="col-md-4">
           <ul class="list-inline social-buttons">
             <li class="list-inline-item">
-              <a href="https://www.fasta.org" target="_blank">
-                <i class="fab fa-firefox"></i>
+              <a href="https://www.youtube.com/channel/UC-HQoM6YcU3NYpaOuYmMp_g" target="_blank">
+                <i class="fab fa-youtube"></i>
               </a>
             </li>
             <li class="list-inline-item">
@@ -652,6 +660,39 @@ that it is adapted to the purposes, guidelines and criteria established in due c
   </footer>
 
   <!-- Portfolio Modals -->
+
+<!-- cookie modal -->
+<div class="portfolio-modal modal fade" id="cookieModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Cookie Notice</h2>
+                <!-- <p class="item-intro text-muted">Cookies</p> -->
+                <p>We use our own and third party cookies to improve our services, provide a pleasant experience and show users advertising related to your preferences by analyzing your browsing habits. Please accept the cookie policy.</p>
+                <!-- <ul class="list-inline">
+                  <li>Date: January 2017</li>
+                  <li>Client: Threads</li>
+                  <li>Category: Illustration</li>
+                </ul> -->
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  
+                  Accept</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Modal 1 -->
   <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">

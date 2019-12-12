@@ -199,6 +199,10 @@ header.head {
   color: white;
 }
 
+.embed-responsive{
+  margin: auto;
+  width:50%;
+}
 header.head .intro-text {
   position: absolute;
   z-index: 1000;
