@@ -1,4 +1,7 @@
 (function($) {
+  $('.carousel').carousel({
+    interval: 4000
+  })
   "use strict"; // Start of use strict
 
   // Smooth scrolling using jQuery easing
