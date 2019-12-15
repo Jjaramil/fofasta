@@ -202,6 +202,11 @@ header.head {
 .embed-responsive{
   margin: auto;
 }
+.embed-responsive-item{
+  max-height: 50%;
+  max-width: 100%;
+
+}
 header.head .intro-text {
   position: absolute;
   z-index: 1000;
