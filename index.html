@@ -21,7 +21,7 @@
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
   <!-- Custom styles for this template -->
-  <link href="css/agency.min.css" rel="stylesheet">
+  <link href="css/agency.css" rel="stylesheet">
 
 </head>
 
@@ -54,7 +54,10 @@
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-         
+         </li>
+         <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="index-en.html"><img src="img/en.png" alt="Smiley face" height="25" width="30"></a>
+       </li>
         </ul>
       </div>
     </div>
@@ -64,7 +67,7 @@
   <header class="head">
       <div class="container">
           <div class="intro-text">
-            <div class="intro-lead-in">Welcome To FoFasta</div>
+            <div class="intro-lead-in">Bienvenido To FoFasta</div>
             <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
           </div>
         </div>
@@ -455,9 +458,31 @@ that it is adapted to the purposes, guidelines and criteria established in due c
           <h3 class="section-subheading text-muted">Some of Fofasta's work.</h3>
         </div>
       </div>
-      <div class="row">
-        <div class="embed-responsive embed-responsive-16by9">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Chapel</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">institutional</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <div class="embed-responsive embed-responsive-16by9">
           <iframe class="embed-responsive-item" src="img/capilla.mp4" allowfullscreen></iframe>
+        </div>
+      </div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src=" https://www.youtube.com/embed/KpT_HpDzCmQ" allowfullscreen></iframe>
+          </div>
+         
+        </div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+          
         </div>
       </div>
    
@@ -753,7 +778,9 @@ that it is adapted to the purposes, guidelines and criteria established in due c
                 <!-- Project Details Go Here -->
                 <h2 class="text-uppercase">Cultural Center</h2>
                 <p class="item-intro text-muted">Cultural center for the young</p>
-                <img class="img-fluid d-block mx-auto" src="img/portf2/cultural.jpg" alt="">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="img/cc.mp4" allowfullscreen></iframe>
+                </div>
                 <p>The cultural center's main objective is to give tools and resources for young people that are curious and want to develop their own capacities. This cultural center is tought to be a place where the ypung can find a cultural exchange with people in the same reality as theirs and people all over the world thanks to the connectivity planned for the place.</p>
                 <ul class="list-inline">
                   <li>Date: August 2019</li>
