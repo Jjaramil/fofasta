@@ -227,7 +227,7 @@ header.head .intro-text .intro-lead-in {
 
 @media (min-width: 768px) {
   header.head .intro-text {
-    padding-top: 300px;
+    padding-top: 36%;
     padding-bottom: 200px;
     margin-left: 19%;
   }
