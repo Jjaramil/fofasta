@@ -1,6 +1,12 @@
+
+ function donate(){
+  $("#paypal-pay").click();
+}
+
+
 (function($) {
   $('.carousel').carousel({
-    interval: 4000
+    interval: 2500
   })
   //$("#cookieModal").modal('toggle');
   "use strict"; // Start of use strict
@@ -19,6 +25,8 @@
     }
   });
 
+
+  
   // Closes responsive menu when a scroll trigger link is clicked
   $('.js-scroll-trigger').click(function() {
     $('.navbar-collapse').collapse('hide');
