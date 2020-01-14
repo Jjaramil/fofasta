@@ -14,15 +14,15 @@ p {
 }
 
 a {
-  color: #CE3F52;
+  color: #fed136;
 }
 
 a:hover {
-  color: #CE3F52;
+  color: #fed136;
 }
 
 .text-primary {
-  color: #CE3F52 !important;
+  color: #fed136 !important;
 }
 
 h1,
@@ -37,6 +37,7 @@ h6 {
 
 .page-section {
   padding: 25px 0;
+  min-height: 100vh;
 }
 
 .donation-button{
@@ -48,8 +49,12 @@ h6 {
   margin-bottom: 15px;
 }
 
+.text-muted2{
+  color: #c0ccd6 !important;
+}
+
 .page-section h3.section-subheading {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   font-style: italic;
   margin-bottom: 75px;
@@ -64,7 +69,17 @@ h6 {
   text-transform: none;
   font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
+.page-section h3.section-subheading3 {
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+  text-transform: none;
+  font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
 
+.values{
+  margin-bottom: 3%;
+}
 .page-title{
   color: #fed136 !important;
 }
@@ -76,12 +91,12 @@ h6 {
 }
 
 ::-moz-selection {
-  background: #CE3F52;
+  background: #fed136;
   text-shadow: none;
 }
 
 ::selection {
-  background: #CE3F52;
+  background: #fed136;
   text-shadow: none;
 }
 
@@ -108,13 +123,13 @@ img::-moz-selection {
 }
 
 .btn-primary {
-  background-color: #CE3F52;
-  border-color: #CE3F52;
+  background-color: #fed136;
+  border-color: #fed136;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  background-color: #ee5c57 !important;
-  border-color: #ee5c57 !important;
+  background-color: #fed136 !important;
+  border-color: #fed136 !important;
   color: white;
 }
 
@@ -133,21 +148,33 @@ img::-moz-selection {
   text-transform: uppercase;
   color: white;
   border: 0;
-  background-color: #CE3F52;
+  background-color: #fed136;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
+.video-tab{
+  font-family: Montserrat;
+}
+
+.modal-desc{
+  font-family: Montserrat;
+}
+
+.dropdown-menu {
+font-family: montserrat;
+}
+
 #mainNav .navbar-brand {
-  color: #CE3F52;
+  color: #fed136;
   font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: #ee5c57;
+  color: #fed136;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
-  font-size: 90%;
+  font-size: 1rem;
   font-weight: 400;
   padding: 0.75em 0;
   letter-spacing: 1px;
@@ -156,7 +183,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #CE3F52;
+  color: #fed136;
 }
 
 @media (min-width: 992px) {
@@ -219,7 +246,7 @@ header.head {
 .embed-responsive-item{
   max-height: 50%;
   max-width: 100%;
-
+  margin-bottom: 5%;
 }
 header.head .intro-text {
   position: absolute;
@@ -277,7 +304,7 @@ header.head .intro-text .intro-lead-in {
   height: 100%;
   transition: all ease 0.5s;
   opacity: 0;
-  background: rgba(206, 63, 82, 0.9);
+  background: rgba(254, 209, 54, 0.9);
 }
 
 .portfolio-item .portfolio-link .portfolio-hover:hover {
@@ -480,7 +507,7 @@ header.head .intro-text .intro-lead-in {
   color: white;
   border: 7px solid #e9ecef;
   border-radius: 100%;
-  background-color: #CE3F52;
+  background-color: #fed136;
 }
 
 .timeline > li .timeline-image h4 {
@@ -559,6 +586,16 @@ header.head .intro-text .intro-lead-in {
   }
 }
 
+.timeline-item{
+  margin-bottom:1% !important;
+}
+.timeline-year{
+  color: #CE3F52 !important;
+}
+.timeline-desc{
+  font-size: 0.9rem;
+}
+
 @media (min-width: 992px) {
   .timeline > li {
     min-height: 150px;
@@ -607,8 +644,8 @@ header.head .intro-text .intro-lead-in {
 }
 
 .team-member img {
-  width: 225px;
-  height: 225px;
+  max-width: 100%;
+  max-height: 225px;
   border: 7px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -622,6 +659,11 @@ header.head .intro-text .intro-lead-in {
   margin-top: 0;
 }
 
+
+.team-name{
+  line-height: 1.5em;
+    min-height: 2.5em;
+}
 section#contact {
   background-color: #212529;
   background-image: url("../img/map-image.png");
@@ -651,7 +693,7 @@ section#contact .form-group textarea.form-control {
 }
 
 section#contact .form-control:focus {
-  border-color: #CE3F52;
+  border-color: #fed136;
   box-shadow: none;
 }
 
@@ -731,12 +773,16 @@ ul.social-buttons li a {
 }
 
 .donate-button{
-  color: white !important;
+ 
     font-size: 22px !important;
 }
 
+.logo-img{
+  padding-top: 16%;
+}
+
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
-  background-color: #CE3F52;
+  background-color: #fed136;
 }
 
 .nav-container{
