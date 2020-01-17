@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Fofasta's  landing page">
   <meta name="author" content="jjaramil">
-
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
   <title>Fofasta - Fundación</title>
 
   <!-- Bootstrap core CSS -->
@@ -649,7 +649,7 @@
               <div class="clearfix"></div>
               <div class="col-lg-12 text-center">
                 <div id="success"></div>
-                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Enviar
+                <button id="sendMessageButton" onclick="sendEmail()" class="btn btn-primary btn-xl text-uppercase" type="button">Enviar
                   Mensaje</button>
               </div>
             </div>
