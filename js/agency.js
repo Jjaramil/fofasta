@@ -20,7 +20,8 @@ function sendEmail() {
     From : 'jjosejaramillos@gmail.com',
     Subject :'nuevo mensaje de Fofasta',
     Body : "<i>This is sent as a feedback from my resume page.</i> <br/> <b>Name: </b>"+name+" <br/> <b>Email: </b>"+email+"<br /> <b>Phone: </b>"+phone+"<br /> <b>Message:</b> <br /> "+message+" <br><br> <b>~End of Message.~</b> "
-    }).then( message => {alert(message) } );
+    })
+    .then( message => {alert(message) } );
 
   //   jQuery.post("https://api.elasticemail.com/v2/contact/add", {
   //     email: $("#email").val(),
