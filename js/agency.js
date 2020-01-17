@@ -4,62 +4,31 @@ function donate() {
 }
 
 
+
+
 //index.js  
 function sendEmail() {
+
+
+
 
   var name = $("#name").val();
   var email = $("#email").val();
   var phone = $("#phone").val();
   var message = $("#message").val();
 
+  var body =  "<i>This is sent as a feedback from my resume page.</i> <br/> <b>Name: </b>"+name+" <br/> <b>Email: </b>"+email+"<br /> <b>Phone: </b>"+phone+"<br /> <b>Message:</b> <br /> "+message+" <br><br> <b>~End of Message.~</b> "
+
   Email.send({
-    Host : 'smtp.elasticemail.com',
-    Username : 'jjosejaramillos@gmail.com',
-    Password : '274B9B3A7F892B2198FDA4569DEE6C38F3BA',
-    To : 'jjosejaramillos@gmail.com',
-    From : 'jjosejaramillos@gmail.com',
-    Subject :'nuevo mensaje de Fofasta',
-    Body : "<i>This is sent as a feedback from my resume page.</i> <br/> <b>Name: </b>"+name+" <br/> <b>Email: </b>"+email+"<br /> <b>Phone: </b>"+phone+"<br /> <b>Message:</b> <br /> "+message+" <br><br> <b>~End of Message.~</b> "
-    })
-    .then( message => {alert(message) } );
-
-  //   jQuery.post("https://api.elasticemail.com/v2/contact/add", {
-  //     email: $("#email").val(),
-  //     publicAccountId: "fofastaSmtp",
-  //     listName: "Jose"
-  // }, function () { }, "json").done(function (result) {
-  //     if (result.success == true) {
-  //         onSuccess();
-  //     }
-  // }).fail(function () {
-  //     // Do something here if it fails...
-  // });
-
-  //   var message = $("#name").val()+"  "+$("#email").val()+"  "+$("#phone").val()+" "+$("#message").val();
-  //   Email.send("fasteano@fasta.es", 
-  // "fasteano@fasta.es",           
-  // "subject of mail",              
-  // "message",                
-  // "smtp.elasticemail.com",                 
-  // "jjosejaramillos@gmail.com",         
-  // "274B9B3A7F892B2198FDA4569DEE6C38F3BA").then(
-  //   message => alert("mail sent successfully")
-  // );   
-
-  // 	Email.send({
-  // 	Host: "smtp.elasticemail.com",
-  // 	Username : "jjosejaramillos@gmail.com",
-  //   Password : "274B9B3A7F892B2198FDA4569DEE6C38F3BA",
-  //   Port:"2525",
-  // 	To : 'fasteano@fasta.es',
-  // 	From : "fasteano@fasta.es",
-  // 	Subject : "Nuevo mensaje en Fofasta",
-  // 	Body : message,
-  // 	}).then(
-  // 		message => alert("mail sent successfully")
-  // 	);
-}
-
+    SecureToken : "3fdec2ae-74a5-4ef3-8325-0547e3397bf2",
+      To : 'jjosejaramillos@gmail.com',
+      From : "jjosejaramillos@gmail.com",
+      Subject : "Fofasta recibio un nuevo mensaje",
+      Body : body
+  }).then(
+    message => alert(message)
+  );
+  }
 
 (function ($) {
   $('.carousel').carousel({
