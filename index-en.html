@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Fofasta's  landing page">
   <meta name="author" content="jjaramil">
-
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  
   <title>Fofasta - Fundación</title>
 
   <!-- Bootstrap core CSS -->
@@ -17,7 +18,8 @@
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
+    type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
   <!-- Custom styles for this template -->
@@ -29,35 +31,49 @@
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">FOFASTA</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="container nav-container">
+      <a class="navbar-brand js-scroll-trigger page-title" href="#page-top">FOFASTA</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">Our Mission</a>
+            <a class="nav-link js-scroll-trigger" href="#services">Our Project</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#portfolio">Projects</a>
+            <a class="nav-link js-scroll-trigger" href="#portfolio">¿Quienes Somos?</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">Our History</a>
-          </li>
-        </li>   <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#videos">Videos</a>
-        </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+            <a class="nav-link js-scroll-trigger" href="#donations">Donaciones</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-         </li>
-         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="index.html"><img src="img/es.png" alt="Smiley face" height="25" width="30"></a>
-       </li>
+            <a class="nav-link js-scroll-trigger" href="#team">Nuestro Equipo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">Historia</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Enlaces
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="http://www.fasta.org/" target="_blank">Fasta</a>
+              <!-- <a class="dropdown-item" href="https://fasta.es/" target="_blank">Fasta España</a> -->
+              <a class="dropdown-item" href="https://www.ufasta.edu.ar/" target="_blank">Universidad Fasta</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html"><img src="img/es.png" alt="" height="25"
+                width="30"></a>
+          </li>
         </ul>
       </div>
     </div>
@@ -65,44 +81,42 @@
 
   <!-- Header -->
   <header class="head">
-      <div class="container">
-          <div class="intro-text">
-            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
-          </div>
+    <div class="container">
+
+    </div>
+    <div id="home-carousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#home-carousel" data-slide-to="1"></li>
+        <li data-target="#home-carousel" data-slide-to="2"></li>
+        <li data-target="#home-carousel" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="img/3.jpg" alt="First slide">
         </div>
-        <div id="home-carousel" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#home-carousel" data-slide-to="1"></li>
-            <li data-target="#home-carousel" data-slide-to="2"></li>
-            <li data-target="#home-carousel" data-slide-to="3"></li>
-          </ol>
-          <div class="carousel-inner">
-    
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="img/3.jpg" alt="First slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="img/IMG_4545.JPG" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="img/c5.jpeg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="img/c3.jpeg" alt="Fourth slide">
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#home-carousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#home-carousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/IMG_4545.JPG" alt="Second slide">
         </div>
-       
-  
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/Car2.jpg" alt="Third slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/Car1.jpg" alt="Fourth slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#home-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#home-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+
   </header>
 
   <!-- Services -->
@@ -110,35 +124,69 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Our Mission</h2>
-          <h3 class="section-subheading text-muted">the evangelization of culture, family and youth</h3>
+          <h2 class="section-heading text-uppercase">Nuestra Misión</h2>
+          <h3 class="section-subheading text-muted">La evangelización de la Familia, la cultura y la juventud</h3>
+          <div class="row text-center">
+            <div class="col-md-4">
+              <img class="img-fluid" src="img/cult.jpeg" alt="">
+
+              <h4 class="service-heading">Cultura</h4>
+              <!-- <p class="text-muted">Fofastas desir</p> -->
+            </div>
+            <div class="col-md-4">
+              <img class="img-fluid" src="img/family.jpeg" alt="">
+              <h4 class="service-heading">Familia</h4>
+              <!-- <p class="text-muted">Explicar la dimensión Familiar en Inglés</p> -->
+            </div>
+            <div class="col-md-4">
+              <img class="img-fluid" src="img/portf2/ruk6.jpg" alt="">
+              <h4 class="service-heading">Juventud</h4>
+              <!-- <p class="text-muted">Explicar la dimensión juvenil de Fasta en Inglés</p> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Nuestra Visión</h2>
+          <h3 class="section-subheading text-muted">Convertirnos en un referente local para la formación integral de la
+            persona, el desarrollo y perfeccionamiento de competencias profesionales y la difusión de la cultura</h3>
+        </div>
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Formación de emprendedores</h2>
+          <img class="img-fluid" src="img/emprend.jpeg" alt="">
+          <h3 class="section-subheading text-muted entrepeneur-info">Entre los principales objetivos de la fundación, está la formación de jóvenes emprendedores en tecnología digital, medioambiente y educación. 
+            Constituyendo esto un valioso aporte 
+            para diversificar la economía, crear empleo sostenible y lograr mayores niveles de bienestar social.</h3>
+        </div>
+        <div class="col-lg-12 values">
+          <h2 class="section-heading text-uppercase text-center">Valores</h2>
+          <ol>
+            <li>
+              <h3 class="section-subheading3 text-muted"> La protección de la dignidad de la persona humana en todas sus
+                dimensiones.</h3>
+
+
+            </li>
+            <li>
+              <h3 class=" section-subheading3 text-muted"> El respeto y defensa de la cultura autóctona</h3>
+
+
+            </li>
+            <li>
+              <h3 class="section-subheading3 text-muted">La autosustentabilidad de nuestros proyectos a través de la
+                capacitación de recursos humanos locales. </h3>
+
+            </li>
+          </ol>
         </div>
       </div>
-      <div class="row text-center">
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-book-reader fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading">Culture</h4>
-          <!-- <p class="text-muted">Fofastas desir</p> -->
+
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Vivir en el Congo</h2>
         </div>
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-users fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading">Family</h4>
-          <!-- <p class="text-muted">Explicar la dimensión Familiar en Inglés</p> -->
-        </div>
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-child fa-stack-1x fa-inverse"></i>
-            <i class="fas fa-child fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading">Youth</h4>
-          <!-- <p class="text-muted">Explicar la dimensión juvenil de Fasta en Inglés</p> -->
+        <div class="embed-responsive embed-responsive-16by9" style="width: 68%; height: 68%;">
+          <iframe class="embed-responsive" src=" https://www.youtube.com/embed/7W9oa-NxH_4" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -149,8 +197,10 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Projects</h2>
-          <h3 class="section-subheading text-muted">FoFasta has many projects that are aligned with the foundation´s mission, in it´s three pilars family, culture and youth.</h3>
+          <h2 class="section-heading text-uppercase">Nosotros</h2>
+          <h3 class="section-subheading2">Fofasta es un fundación de la Fraternidad de Agrupaciones Santo Tomás de
+            Aquino "Fasta" cuya misión es la promoción social, cultural y espiritual de sus miembros a través de una
+            recta formación, fundamentada en principios éticos y morales en pos del desarrollo local.</h3>
         </div>
       </div>
       <div class="row">
@@ -164,8 +214,8 @@
             <img class="img-fluid" src="img/portf2/daniel.jpg" alt="">
           </a>
           <div class="portfolio-caption">
-            <h4>School</h4>
-            <p class="text-muted">Culture</p>
+            <h4>Colegio</h4>
+            <p class="text-muted">Cultura</p>
           </div>
         </div>
         <div class="col-md-6 col-sm-6 portfolio-item">
@@ -175,11 +225,11 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portf2/cultural.jpg" alt="">
+            <img class="img-fluid" src="img/fam.jpeg" alt="">
           </a>
           <div class="portfolio-caption">
-            <h4>Cultural Center</h4>
-            <p class="text-muted">Culture</p>
+            <h4>Centro Cultural</h4>
+            <p class="text-muted">Cultura</p>
           </div>
         </div>
         <div class="col-md-6 col-sm-6 portfolio-item">
@@ -189,11 +239,11 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portf2/com.jpg" alt="">
+            <img class="img-fluid" src="img/portf2/convivios.jpeg" alt="">
           </a>
           <div class="portfolio-caption">
             <h4>Convivios</h4>
-            <p class="text-muted">Family</p>
+            <p class="text-muted">Familia</p>
           </div>
         </div>
         <div class="col-md-6 col-sm-6 portfolio-item">
@@ -203,480 +253,711 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid " src="img/portf2/ruk.jpg" alt="">
+            <img class="img-fluid" src="img/portf2/ruk.jpg" alt="">
           </a>
           <div class="portfolio-caption">
-            <h4>Youth Centers</h4>
-            <p class="text-muted">youth</p>
+            <h4>Centros Juveniles</h4>
+            <p class="text-muted">Juventud</p>
           </div>
         </div>
       </div>
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">¿Qué es Fasta?</h2>
+          <p class="section-subheading text-muted">
+            Fasta es una organización de carácter humanitario, que tiene por objetivo la promoción social de la persona
+            en todas las etapas de su vida, a través de programas de formación integral, participación comunitaria e
+            inserción social.
+            Desde su fundación en 1962, ha dirigido sus esfuerzos en fortalecer a través de la cultura los lazos que
+            unen a cada pueblo con su patrimonio histórico para la construcción de un presente de paz y bienestar.
+          </p>
+          <p class="section-subheading text-muted">
+            Cuenta hoy en día con una red de centros de formación que se despliegan en tres continentes. En el ámbito de
+            la educación formal posee en la República Argentina 23 colegios, 2 colegios de educación especial, 4
+            institutos de educación superior y una universidad con centros asociados en numerosas ciudades, que con más
+            de 30 carreras y posgrados llega a todos los rincones del mundo a través de su propuesta de educación a
+            distancia.
+          </p>
+          <p class="section-subheading text-muted">
+            En la actualidad está presente en Argentina, Costa Rica, Ecuador, España, Perú y la República Democrática
+            del Congo.
+          </p>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Fasta en África</h2>
+
+
+          <p class="section-subheading text-muted">
+            En la actualidad, Fasta crece y se consolida en África. Está presente en ocho barrios de Kinshasa, capital
+            de la República Democrática del Congo, con 450 jóvenes de todas las edades. </p>
+          <p class="section-subheading text-muted">
+            Nuestra institución comenzó su tarea en el África fundando centros juveniles. Los jóvenes se reúnen en
+            comunidad para realizar actividades de estudio, deportivas y recreativas.
+          </p>
+
+        </div>
+        <div class="col-md-12 col-sm-12 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#docsModal6">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <div class="timeline-image2">
+              <h4>Reconocimiento</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Videos</h2>
+          <h3 class="section-subheading text-muted">Un poco de nuestro trabajo.</h3>
+        </div>
+      </div>
+      <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active video-tab" id="com-tab" data-toggle="tab" href="#com" role="tab" aria-controls="com"
+            aria-selected="false">COMUNIDAD</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link video-tab" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+            aria-selected="true">SALÓN MÚLTIPLE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link video-tab" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+            aria-controls="profile" aria-selected="false">INSTITUCIONAL</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link video-tab" id="network-tab" data-toggle="tab" href="#network" role="tab"
+            aria-controls="network" aria-selected="false">RED EDUCATIVA</a>
+        </li>
+
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade " id="home" role="tabpanel" aria-labelledby="home-tab">
+          <video class="embed-responsive-item" controls>
+            <source src="img/su.mp4">
+            Your browser does not support the video tag.
+          </video>
+
+        </div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive" src=" https://www.youtube.com/embed/KpT_HpDzCmQ" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="network" role="tabpanel" aria-labelledby="network-tab">
+          <video class="embed-responsive-item" controls>
+            <source src="img/red.mp4">
+            Your browser does not support the video tag.
+          </video>
+
+        </div>
+        <div class="tab-pane fade show active" id="com" role="tabpanel" aria-labelledby="com-tab">
+          <video class="embed-responsive-item" controls>
+            <source src="img/vid-sing.mp4">
+            Your browser does not support the video tag.
+          </video>
+
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- About -->
-  <section class="page-section" id="about">
+  <!-- Donations -->
+  <section class="page-section" id="donations">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">About</h2>
-          <h3 class="section-subheading text-muted">Our history and Beginnings.</h3>
+          <h2 class="section-heading text-uppercase">Donaciones</h2>
+          <h3 class="section-subheading2">Su generoso aporte será destinado al sostenimiento del centro educativo para
+            niños, y a nuestros programas de formación y capacitación para jóvenes de la ciudad de Kinshasa, República
+            Democrática del Congo. </h3>
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-12">
-          <ul class="timeline">
-            <li>
-              <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/timeline/2006.png" alt="">
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>2006</h4>
-                  <h4 class="subheading">An unexpected Beginning</h4>
-                </div>
-                <div class="timeline-body">
-                  <p class="text-muted">
-                      On June 12, 2006, the now Pbro. Merleau Nsimba
-                      Ngoma sent an email to Fasta requesting their incorporation to our institution.
-                      After almost four years of fluid communications, in May
-                      2010, Merleau made his first trip to Argentina
-                      to know the work. What caught his attention the most
-                      it was the work “of humanization and Christianization with
-                      young people ”and“ the way Fasta knows how to link the
-                      culture with the message of Christ and elevate man
-                      in culture and in faith. " On his return to Africa, he was entrusted with the foundation
-                      of a ruca in Kinshasa.
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li class="timeline-inverted">
-              <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/timeline/2010.png" alt="">
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>2010</h4>
-                  <h4 class="subheading">The adventure begins</h4>
-                </div>
-                <div class="timeline-body">
-                  <p class="text-muted">
-                      In September 2010 ruca Bakanja was founded, in honor
-to Isidoro Bakanja, beatified
-by Pope St. John Paul
-II to whom the Church of Congo
-has as patron saint of the
-Young Catholics With the ruca
-and a large youth group
-began the presence
-of Fasta in Africa.
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/timeline/2011.png" alt="">
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>2011</h4>
-                  <h4 class="subheading">Strong foundations</h4>
-                </div>
-                <div class="timeline-body">
-                  <p class="text-muted">
-                      In the parish San Antonio de Padua de Kinshasa, about 120 men and
-                      women gathered to hopefully build a Christian community that,
-                      From the charism of Fasta, be a contribution to the training of young people in your country.
-                      In May they made the first march under the name "Saint Thomas of Aquino",
-                      and ascended Mount Mangengenge.</p>
-                </div>
-              </div>
-            </li>
-            <li class="timeline-inverted">
-              <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/timeline/2012.png" alt="">
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>2012</h4>
-                  <h4 class="subheading">A new seminarian</h4>
-                </div>
-                <div class="timeline-body">
-                  <p class="text-muted">
-                      In November 2012 and on the occasion of the 50th anniversary of Fasta, 
-                      Merleau traveled again to Argentina to participate in the central celebrations
-                       and to the same time joined as a seminarian of the Apostolic Priestly Fraternity Thomas Aquinas.
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li >
-              <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/timeline/2014.png" alt="">
-              </div>
-              <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>2014</h4>
-                    <h4 class="subheading">New needs</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">
-                        In January 2014, the then seminarian Merleau
-Nsimba Ngoma, returned to his
-country to visit the communities
-Fasta dades in Africa. In
-his return, he enunciated what it was
-what they needed, both physical
-as spiritually said
-communities Especially
-he referred to the need for
-that Congolese fasteans will visit Argentina in order to know and live the style of
-Fasta and communicate it faithfully in your country; get a stable place for the
-ruca and sustain some activities of young people who have difficulties for the
-socio-economic situation.
-                    </p>
-                  </div>
-                </div>
-            </li>
-            <li class="timeline-inverted">
-              <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/timeline/2015.png" alt="">
-              </div>
-              <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>2015</h4>
-                    <h4 class="subheading">Help appeared</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">
-                        In 2015, the Fasteans joined the solidarity campaign that the entire City
-Militia, through the apostolic community Pope Francis, urged for
-sustain the work in that continent. Minzoto, which in African language can work
-dubbed as "the dreams of Africa", is the name they chose to explain their
-Desires to have your own space. "There's a lot
-material and economic needs in the mission
-of the movement. You have to establish structures
-minimums, such as a chapel, education of
-catechists, residence for the priests of the work,
-but also to sustain the charities,
-of education and human development, ”said seminarian Merleau Nsimba Ngoma in a report
-presented early
-                    </p>
-                  </div>
-                </div>
-            </li>
-            <li >
-              <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/timeline/2015-2.png" alt="">
-              </div>
-              <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>2015</h4>
-                    <h4 class="subheading">More help</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">
-                        In November, Mag. Dan Olofsson
-and his wife, Christine Benedikta de
-Olofsson, recognized for his outstanding
-every humanitarian action in various
-places in Africa were invited
-by the authorities of Fasta and via-
-They went to Argentina. That visit had
-as an objective that marriage
-know the Movement and also
-present the action plan
-apostolic of our institution in
-Kinshasa (Minzoto Project).
-                    </p>
-                  </div>
-                </div>
-            </li>
-            <li class="timeline-inverted">
-                <div class="timeline-image">
-                    <img class="rounded-circle img-fluid" src="img/timeline/2016.png" alt="">
-                </div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                      <h4>2016</h4>
-                      <h4 class="subheading">Presence starts</h4>
-                    </div>
-                    <div class="timeline-body">
-                      <p class="text-muted">
-                          In February 2016, it was incorporated
-The Fasteans were taken to the Seminary of the Priestly Fraternity
-Congolese Dieumerci Matondo
-Ngoma and Reneidi Kayembe Kayemba.
-In March, the Pbro. Eduardo Lloveras made a new visit
-to the city of Kinshasa in order
-to continue with the community and
-institutional accompaniment
-with the fasteanos of the place.
-                      </p>
-                    </div>
-                  </div>
-              </li>
-              <li >
-                  <div class="timeline-image">
-                      <img class="rounded-circle img-fluid" src="img/timeline/2017.png" alt="">
-                  </div>
-                  <div class="timeline-panel">
-                      <div class="timeline-heading">
-                        <h4>2017</h4>
-                        <h4 class="subheading">The labor continues</h4>
-                      </div>
-                      <div class="timeline-body">
-                        <p class="text-muted">
-                            In January 2017, Daniel Medina Basla was appointed as Promoter for the Fasta Kinshasa Foundation, with the main mission of promoting, from his condition
-of the layman of the work, that in that foundational community the message of
-Christ, the Catholic faith is lived and the foundation of the movement and the accomplishment of its works are sought, by working in coordination with the Promotion Directorate
-Apostolic and with the Head of the Fasta Kinshasa Foundation. Will also be
-the person in charge of advising and accompanying the successive stages of construction of the
-project and remodeling to be carried out in the building of the institutional headquarters, in order
-that it is adapted to the purposes, guidelines and criteria established in due course by the Presidency of Fasta.
-                        </p>
-                      </div>
-                    </div>
-                </li>
-                <li >
-                    <div class="timeline-image">
-                      <h4>Be Part
-                        <br>Of Our
-                        <br>Story!</h4>
-                    </div>
-                </li>
-          </ul>
-        </div>
+        <form action="https://www.paypal.com/cgi-bin/webscr" class="donation-form" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick" />
+          <input type="hidden" name="hosted_button_id" value="VWHX4KREEY5BA" />
+          <a class="btn btn-primary btn-xl text-uppercase donate-button" onclick="donate()">Donar con<span><img
+                class="donation-button" src="img/logos/paypallogo.png"></span> </a>
+          <div style="display: none;">
+            <input id="paypal-pay" type="image" src="https://www.paypalobjects.com/en_US/ES/i/btn/btn_donateCC_LG.gif"
+              border="0" name="submit" title="PayPal - The safer, easier way to pay online!"
+              alt="Donate with PayPal button" />
+            <img alt="" border="0" src="https://www.paypal.com/en_ES/i/scr/pixel.gif" width="1" height="1" />
+          </div>
+
+        </form>
       </div>
     </div>
+
   </section>
 
-  
-<section class="bg-light page-section" id="videos">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-heading text-uppercase">Videos</h2>
-          <h3 class="section-subheading text-muted">Some of Fofasta's work.</h3>
-      </div>
-    </div>
-    <ul class="nav nav-tabs" id="myTab" role="tablist">
-      <li class="nav-item">
-        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
-          aria-selected="true">Multiple use</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
-          aria-selected="false">Institutional</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
-          aria-selected="false">Educational Network</a>
-      </li>
-    </ul>
-    <div class="tab-content" id="myTabContent">
-      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-        <video class="embed-responsive-item" controls>
-          <source src="img/su.mp4">
-          Your browser does not support the video tag.
-        </video>
 
-      </div>
-      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive" src=" https://www.youtube.com/embed/KpT_HpDzCmQ"
-            allowfullscreen></iframe>
-        </div>
-      </div>
-      <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-        <video class="embed-responsive-item" controls>
-          <source src="img/red.mp4">
-          Your browser does not support the video tag.
-        </video>
 
-      </div>
-    </div>
-
-  </div>
-</section>
 
   <!-- Team -->
-  
   <section class="page-section" id="team">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-          <h3 class="section-subheading text-muted">FoFasta counts with a profesional and commited team that want to make this world a better world.</h3>
+          <h2 class="section-heading text-uppercase">Nuestro Gran Equipo</h2>
+          <h3 class="section-subheading text-muted">Fofasta cuenta con un equipo profesional y comprometido que quiere
+            hacer de este mundo, un mundo mejor.</h3>
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-3">
+        <div class="col">
           <div class="team-member">
             <img class="mx-auto rounded-circle" src="img/team2/CURA1.png" alt="">
-            <h4>PHD Fray. Aníbal Fosbery</h4>
+            <h4 class="team-name">Fray Aníbal Fosbery</h4>
             <p class="text-muted">
-              Fasta founder and Fofasta promotor.
+              Fundador de Fasta.
             </p>
           </div>
         </div>
-        <div class="col-sm-3">
+        <div class="col">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="img/team2/carlos.png" alt="">
+            <h4 class="team-name">Carlos Rossini </h4>
+
+            <p class="text-muted">
+              Vicepresidente de Fasta
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="img/team2/ale.jpeg" alt="">
+            <h4 class="team-name">Alejandro Campos</h4>
+            <p class="text-muted">
+              Director General.
+            </p>
+          </div>
+        </div>
+        <div class="col">
           <div class="team-member">
             <img class="mx-auto rounded-circle" src="img/team2/matata.png" alt="">
-            <h4>Pbro. Maurice Matata</h4>
-            <p class="text-muted">Responsible for FoFasta in Kinshasa</p>
+            <h4 class="team-name">Pbro. Maurice Matata</h4>
+            <p class="text-muted">Responsable de Fofasta en Kinshasa</p>
             <ul class="list-inline social-buttons">
-
               <li class="list-inline-item">
-                <a href="https://www.facebook.com/maurice.matata" target="_blank">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
               </li>
-
             </ul>
           </div>
         </div>
-        <div class="col-sm-3">
+        <div class="col">
           <div class="team-member">
             <img class="mx-auto rounded-circle" src="img/team2/daniel.png" alt="">
-            <h4>Daniel Enrique Medina</h4>
-            <p class="text-muted">FoFasta Colaborator from Spain</p>
+            <h4 class="team-name">Daniel Enrique Medina</h4>
+            <p class="text-muted">Promotor y administrador de Fofasta</p>
             <ul class="list-inline social-buttons">
-
               <li class="list-inline-item">
-                <a href="https://www.facebook.com/people/Daniel-Enrique-Medina-Basla/100006371597535" target="_blank">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
               </li>
-
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="team-member">
-            <img class="mx-auto rounded-circle" src="img/team2/Eduard.png" alt="">
-            <h4>Father Eduardo Lloveras</h4>
-            <p class="text-muted">Fofasta Colaborator</p>
-            <ul class="list-inline social-buttons">
             </ul>
           </div>
         </div>
       </div>
       <div class="row">
-        <!-- <div class="col-sm-3">
+        <div class="col">
           <div class="team-member">
-            <img class="mx-auto rounded-circle" src="img/team2/CURA1.png" alt="">
-            <h4>PHD Leonor Aguilar</h4>
-            <p class="text-muted">
-              Colaboradora de Fofasta.
-            </p>
-          </div>
-        </div> -->
-        <div class="col-sm-3">
-          <div class="team-member">
-            <img class="mx-auto rounded-circle" src="img/team2/nadia.jpeg" alt="">
-            <h4>Nadia Cuchuni</h4>
-            <p class="text-muted">Fofasta Colaborator from Congo</p>
+            <img class="mx-auto rounded-circle" src="img/team2/Eduard.png" alt="">
+            <h4 class="team-name">Pbro. Eduardo Lloveras</h4>
+            <p class="text-muted">Delegado de Fasta para África</p>
             <ul class="list-inline social-buttons">
-
-              <!-- <li class="list-inline-item">
-                <a href="https://www.facebook.com/maurice.matata" target="_blank">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li> -->
-
             </ul>
           </div>
         </div>
-        <div class="col-sm-3">
+        <div class="col">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="img/team2/didio.jpeg" alt="">
+            <h4 class="team-name">Pbro. Didier Kasombo</h4>
+
+            <p class="text-muted">Capellán de Fofasta</p>
+            <ul class="list-inline social-buttons">
+            </ul>
+          </div>
+
+        </div>
+        <div class="col">
           <div class="team-member">
             <img class="mx-auto rounded-circle" src="img/team2/eze.png" alt="">
-            <h4>Ezequiel Sánchez</h4>
-            <p class="text-muted">FoFasta Colaborator from Spain</p>
+            <h4 class="team-name">Ezequiel Sánchez</h4>
+            <p class="text-muted">Asesor de Familias Fofasta</p>
             <ul class="list-inline social-buttons">
-              
-              <!-- <li class="list-inline-item">
-                <a href="https://www.facebook.com/people/Daniel-Enrique-Medina-Basla/100006371597535" target="_blank">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li> -->
-              <li class="list-inline-item">
-                <a href="https://www.linkedin.com/in/ezequiel-s%C3%A1nchez-348032b9/" target="_blank">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </li>
-
             </ul>
           </div>
         </div>
-        <div class="col-sm-3">
+        <div class="col">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="img/team2/Ofe.png" alt="">
+            <h4 class="team-name">Ofelia Giunta</h4>
+
+            <p class="text-muted">Responsable de nuevas fundaciones</p>
+            <ul class="list-inline social-buttons">
+            </ul>
+          </div>
+
+        </div>
+        <div class="col">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="img/team2/Gercil.jpg" alt="">
+            <h4 class="team-name">Gercil Mitundukidi</h4>
+            <p class="text-muted">Coordinador local</p>
+            <ul class="list-inline social-buttons">
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+
+
+        <div class="col">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="img/team2/Ben.jpeg" alt="">
+            <h4 class="team-name">Ben Michel Mbumba</h4>
+            <p class="text-muted">Responsable de jóvenes y niños </p>
+            <ul class="list-inline social-buttons">
+            </ul>
+          </div>
+        </div>
+        <div class="col">
           <div class="team-member">
             <img class="mx-auto rounded-circle" src="img/team2/pepo.png" alt="">
-            <h4>José Jaramillo</h4>
-            <p class="text-muted">FoFasta Colaborator from Spain</p>
+            <h4 class="team-name">José Jaramillo</h4>
+
+            <p class="text-muted">Asesor de Jóvenes Fofasta</p>
             <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="https://www.linkedin.com/in/jjaramil/" target="_blank">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </li>
-              
             </ul>
           </div>
         </div>
+        <div class="col">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="img/team2/Guylite.jpg" alt="">
+            <h4 class="team-name">Guylite Madradu</h4>
+            <p class="text-muted">Secretario Fofasta Congo</p>
+            <ul class="list-inline social-buttons">
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="img/team2/lievin.jpeg" alt="">
+            <h4 class="team-name">Lievin Mahua</h4>
+
+            <p class="text-muted">Jefe de formación</p>
+            <ul class="list-inline social-buttons">
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="img/team2/nadia2.jpeg" alt="">
+            <h4 class="team-name">Nadia Wanadia</h4>
+
+            <p class="text-muted">Comunicaciones</p>
+            <ul class="list-inline social-buttons">
+            </ul>
+          </div>
+        </div>
+
       </div>
       <div class="row">
         <div class="col-lg-8 mx-auto text-center">
-          <p class="large text-muted">We welcome and encourage people that want to make a change to join our team</p>
+          <p class="large text-muted"> Queremos y motivamos a que más gente se una a nuestro equipo</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Clients -->
+  <section class="page-section py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Nuestros Contribuyentes</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <a href="https://www.santanderrio.com.ar/" target="_blank">
+            <img class="img-fluid img-logo d-block mx-auto" src="img/logos/santander.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="https://www.ufasta.edu.ar/" target="_blank">
+            <img class="img-fluid img-logo d-block mx-auto logo-img" src="img/logos/ufasta.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-2 col-sm-6">
+          <a href="https://www.venturismocultural.com/" target="_blank">
+            <img class="img-fluid img-logo d-block mx-auto logo-img" src="img/logos/ven.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-md-2 col-sm-6">
+          <a href="https://cefms.es/" target="_blank">
+            <img class="img-fluid img-logo d-block mx-auto logo-img" src="img/logos/agostino2.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-2 col-sm-6">
+          <a href="https://starforlife.org/" target="_blank">
+            <img class="img-fluid img-logo d-block mx-auto" src="img/logos/star4life.png" alt="">
+          </a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Contact -->
-  <section class="page-section" id="contact">
+  <section class="page-section page-section-contact" id="contact">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Contact Us</h2>
-          <h3 class="section-subheading text-muted">If you want to be a part of this change.</h3>
+          <h2 class="section-heading text-uppercase">Contáctanos</h2>
+          <h3 class="section-subheading text-muted2">Si quieres ser parte de este cambio</h3>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-12 contact-row">
-          <form id="contactForm" name="sentMessage" novalidate="novalidate" action="https://postman-echo.com/post" method="POST">
+          <form id="contactForm" name="sentMessage" novalidate="novalidate">
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
-                  <input class="form-control" id="name" name="name" type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name.">
+                  <input class="form-control" id="name" name="name" type="text" placeholder="Nombre Completo *"
+                    required="required" data-validation-required-message="Please enter your name.">
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
-                  <input class="form-control" id="email" name="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address.">
+                  <input class="form-control" id="email" name="email" type="email" placeholder="Email *"
+                    required="required" data-validation-required-message="Please enter your email address.">
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
-                  <input class="form-control" id="phone" name="phone" type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number.">
+                  <input class="form-control" id="phone" name="phone" type="tel" placeholder="Teléfono *"
+                    required="required" data-validation-required-message="Please enter your phone number.">
                   <p class="help-block text-danger"></p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <textarea class="form-control" id="message" name="message" placeholder="Your Message *" required="required" data-validation-required-message="Please enter a message."></textarea>
+                  <textarea class="form-control" id="message" name="message" placeholder="Mensaje *"
+                    required="required" data-validation-required-message="Please enter a message."></textarea>
                   <p class="help-block text-danger"></p>
                 </div>
               </div>
               <div class="clearfix"></div>
               <div class="col-lg-12 text-center">
                 <div id="success"></div>
-                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
+                <button id="sendMessageButton" onclick="sendEmail()" class="btn btn-primary btn-xl text-uppercase" type="button">Enviar
+                  Mensaje</button>
               </div>
             </div>
           </form>
         </div>
-      
+
+      </div>
+    </div>
+  </section>
+  <!-- About -->
+  <section class="page-section" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Historia</h2>
+          <h3 class="section-subheading text-muted">Nuestra historia y sus comienzos.</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="timeline">
+            <li class="timeline-item">
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/timeline/2006.png" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="timeline-year">2006</h4>
+                  <h4 class="subheading">Un inicio inesperado</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted timeline-desc">
+                    El 12 de junio de 2006, el ahora Pbro. Merleau Nsimba
+                    Ngoma, envió un correo electrónico a Fasta solicitando su incorporación a nuestra institución. Luego
+                    de
+                    casi cuatro años de comunicaciones fluidas, en mayo
+                    de 2010, Merleau realizó su primer viaje a la Argentina
+                    para conocer la obra. Lo que más le llamó su atención
+                    fue el trabajo “de humanización y cristianización con
+                    los jóvenes” y “el modo en que Fasta sabe vincular la
+                    cultura con el mensaje de Cristo y elevar al hombre
+                    en la cultura y en la fe”. En su regreso al África, se le encomendó la fundación
+                    de un ruca en Kinshasa.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted timeline-item">
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/timeline/2010.png" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="timeline-year">2010</h4>
+                  <h4 class="subheading">La aventura empieza</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted timeline-desc">
+                    En septiembre de 2010 se
+                    fundó ruca Bakanja, en honor
+                    a Isidoro Bakanja, beatificado
+                    por el papa San Juan Pablo
+                    II a quien la Iglesia de Congo
+                    tiene como patrono de los
+                    jóvenes católicos. Con el ruca
+                    y un nutrido grupo juvenil se
+                    dio comienzo a la presencia
+                    de Fasta en África.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/timeline/2011.png" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="timeline-year">2011</h4>
+                  <h4 class="subheading">Comienzos fundacionales</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted timeline-desc">
+                    En la parroquia San Antonio de Padua de Kinshasa, alrededor de 120 varones y
+                    mujeres se reunían para construir con esperanza una comunidad cristiana que,
+                    desde el carisma de Fasta, sea un aporte a la formación de los jóvenes en su país.
+                    En mayo realizaron la primera marcha bajo el nombre “Santo Tomás de Aquino”,
+                    y ascendieron el Monte Mangengenge.</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted timeline-item">
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/timeline/2012.png" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="timeline-year">2012</h4>
+                  <h4 class="subheading">Un nuevo seminarista</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted timeline-desc">
+                    En noviembre de 2012 y con motivo de cumplirse los 50 años de Fasta, Merleau
+                    viajó nuevamente a la Argentina para participar de los festejos centrales y al mismo tiempo se
+                    incorporó como seminarista de Fraternidad Apostólica Sacerdotal
+                    Tomás de Aquino.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/timeline/2014.png" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="timeline-year">2014</h4>
+                  <h4 class="subheading">Nuevas semillas</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted timeline-desc">
+                    En enero de 2014, el por entonces seminarista Merleau
+                    Nsimba Ngoma, regresó a su
+                    país para visitar las comunidades de Fasta en África. En
+                    su retorno, enunció qué era
+                    lo que precisaban, tanto física
+                    como espiritualmente, dichas
+                    comunidades. Especialmente
+                    se refirió a la necesidad de
+                    que fasteanos de Congo visitaran Argentina con el fin conocer y vivir el estilo de
+                    Fasta y comunicarlo con fidelidad en su país; conseguir un lugar estable para el
+                    ruca y sostener algunas actividades de los jóvenes que tienen dificultades por la
+                    situación socio-económica.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted timeline-item">
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/timeline/2015.png" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="timeline-year">2015</h4>
+                  <h4 class="subheading">
+                    La ayuda comienza
+                  </h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted timeline-desc">
+                    En 2015, los fasteanos se sumaron a la campaña solidaria que toda la Ciudad
+                    Miliciana, a través de la comunidad apostólica Papa Francisco, impulsó para
+                    sostener la obra en ese continente. Minzoto, que en lengua africana puede tra-
+                    ducirse como “los sueños de África”, es el nombre que eligieron para explicar sus
+                    deseos de tener un espacio propio. “Hay muchas
+                    necesidades materiales y económicas en la misión
+                    del Movimiento. Hay que establecer estructuras
+                    mínimas, tales como una capilla, educación de
+                    catequistas, residencia para los curas de la obra,
+                    pero también para sostener las obras de caridad,
+                    de educación y de desarrollo humano”, contó el seminarista Merleau Nsimba Ngoma en un informe
+                    presentado a comienzos de ese año en la reunión
+                    anual de sacerdotes.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/timeline/2015-2.png" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="timeline-year">2015</h4>
+                  <h4 class="subheading">Un poco más de ayuda</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted timeline-desc">
+                    En noviembre, el Mag. Dan Olofsson
+                    y su esposa, Christine Benedikta de
+                    Olofsson, reconocidos por su destacada acción humanitaria en diversos
+                    lugares de África, fueron invitados
+                    por las autoridades de Fasta y viajaron a Argentina. Dicha visita tuvo
+                    como objetivo que el matrimonio
+                    conociera el Movimiento y, además,
+                    presentarles el plan de acción
+                    apostólica de nuestra institución en
+                    Kinshasa (Proyecto Minzoto).
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted timeline-item">
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/timeline/2016.png" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="timeline-year">2016</h4>
+                  <h4 class="subheading">Presencia</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted timeline-desc">
+                    En febrero de 2016, se incorporaron al Seminario de la Fraternidad Sacerdotal los fasteanos
+                    congoleños Dieumerci Matondo
+                    Ngoma y Reneidi Kayembe Kayemba.
+                    En marzo, el Pbro. Eduardo
+                    Lloveras realizó una nueva visita
+                    a la ciudad de Kinshasa, a fin
+                    de continuar con el contacto y
+                    acompañamiento institucional
+                    con los fasteanos del lugar.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/timeline/2017.png" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="timeline-year">2017</h4>
+                  <h4 class="subheading">La labor continúa</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted timeline-desc">
+                    En enero de 2017 se designó a Daniel Medina Basla como Promotor para la fundación Fasta Kinshasa,
+                    con la misión principal de promover, desde su condición
+                    de laico de la obra, que en esa comunidad fundacional se cultive el mensaje de
+                    Cristo, se viva la fe católica y se procure la fundación del movimiento y la realización de sus
+                    obras, al trabajar coordinadamente con la Dirección de Promoción
+                    Apostólica y con el Responsable de la fundación Fasta Kinshasa. También será
+                    el encargado de asesorar y acompañar las sucesivas etapas de construcción del
+                    proyecto y remodelación a realizarse en el inmueble de la sede institucional, a fin
+                    de que la misma se adecúe a los fines, pautas y criterios establecidos oportunamente por la
+                    Presidencia de Fasta.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted timeline-item">
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/timeline/2018.JPG" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="timeline-year">2018</h4>
+                  <h4 class="subheading">El siguiente paso, infraestructura propia</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted timeline-desc">
+                    Durante el año 2018 con un gran esfuerzo por parte de la comunidad de Fasta se comenzaron las obras
+                    de adecuación y restauración de la capilla "Santo Tomás de Aquino" y de los espacios necesarios para
+                    el funcionamiento de las actividades comunitarias.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/timeline/2019.jpeg" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="timeline-year">2019</h4>
+                  <h4 class="subheading">La bendición del fundador</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted timeline-desc">
+                    En marzo de 2019 la comunidad de Fasta Kinshasa fue confirmada en su carisma con la visita del padre
+                    fundador Fr. Dr. Aníbal Fosbery. Con esta visita concluye la etapa fundacional y comienzan los
+                    nuevos desfíos para el desarrollo de la comunidad en orden a su carisma en la evangelización de la
+                    familia, cultura y juventud. Se desarrollan los proyectos educativos, culturales y arquitectónicos
+                    para dicho fin.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted timeline-item">
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="img/timeline/2020.jpeg" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="timeline-year">2020</h4>
+                  <h4 class="subheading">La misión de fortalece</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted timeline-desc">
+                    Con la incorporación de dos jóvenes misioneros, Ezequiel Sánchez y José Jaramillo de Argentina y
+                    Ecuador. Fasta se reafirma en su voluntad de fortalecer y mantener los proyectos en África,
+                    partiendo de la comunidad de Fasta Kinshasa.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -720,38 +1001,6 @@ that it is adapted to the purposes, guidelines and criteria established in due c
 
   <!-- Portfolio Modals -->
 
-<!-- cookie modal -->
-<div class="portfolio-modal modal fade" id="cookieModal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Cookie Notice</h2>
-                <!-- <p class="item-intro text-muted">Cookies</p> -->
-                <p>We use our own and third party cookies to improve our services, provide a pleasant experience and show users advertising related to your preferences by analyzing your browsing habits. Please accept the cookie policy.</p>
-                <!-- <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Threads</li>
-                  <li>Category: Illustration</li>
-                </ul> -->
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  
-                  Accept</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- Modal 1 -->
   <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
@@ -767,18 +1016,23 @@ that it is adapted to the purposes, guidelines and criteria established in due c
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Isidoro Bakanja School</h2>
-                <p class="item-intro text-muted">First of many planned schools</p>
+                <h2 class="text-uppercase">Colegio Isidoro Bakanja</h2>
+                <p class="item-intro text-muted">El primero de muchos</p>
                 <img class="img-fluid d-block mx-auto" src="img/planos-cole.png" alt="">
-                <p>Isidoro Bakanja is thought to be a school that offers integral education at an accesible price for families in Kinshasa. This project is committed in giving quality education to improves kids oportunities in the future, so that they can be protagonists of their own country's history. At Fofasta we believe this is the best and the hardest way to help people in the Democratic Republic of Congo </p>
-                <ul class="list-inline">
-                  <li>Date: June 2019</li>
-                  <li>City: Kinshasa</li>
-                  <li>Ambit: Culture</li>
+                <p class="modal-desc">El proyecto educativo está pensado como un prototipo para la República Democrática
+                  del Congo con
+                  educación digitalizada y aulas equipadas con tecnología de punta. Se centra en que los alumnos
+                  adquieran las competencias para liderar, dirigir y emprender con autonomía. Entre las competencias a
+                  desarrollar se prioriza la enseñanza del pensamiento computacional, comenzando desde el nivel inicial
+                  en contacto con la robótica. </p>
+                <ul class="list-inline modal-desc">
+                  <li>Fecha: Junio 2020</li>
+                  <li>Ciudad: Kinshasa</li>
+                  <li>Ámbito: Cultura</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
-                  Close Project</button>
+                  Cerrar Proyecto</button>
               </div>
             </div>
           </div>
@@ -801,21 +1055,23 @@ that it is adapted to the purposes, guidelines and criteria established in due c
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Cultural Center</h2>
-                <p class="item-intro text-muted">Cultural center for the young</p>
-                <video class="embed-responsive-item"  controls>
+                <h2 class="text-uppercase">Centro Cultural</h2>
+                <p class="item-intro text-muted">Centro cultural para los jóvenes</p>
+                <video class="embed-responsive-item" controls>
                   <source src="img/cc.mp4">
                   Your browser does not support the video tag.
-               </video>
-                <p>The cultural center's main objective is to give tools and resources for young people that are curious and want to develop their own capacities. This cultural center is tought to be a place where the ypung can find a cultural exchange with people in the same reality as theirs and people all over the world thanks to the connectivity planned for the place.</p>
-                <ul class="list-inline">
-                  <li>Date: August 2019</li>
-                  <li>City: Kinshasa</li>
-                  <li>Ambit: Culture</li>
+                </video>
+                <p class="modal-desc">Un espacio de formación y capacitación para los Jóvenes Congoleños a fin de ser
+                  líderes sociales
+                  para el desarrallo Humano y de Formación de Emprendedores para el Desarrollo. </p>
+                <ul class="list-inline modal-desc">
+                  <li>Fecha: Agosto 2020</li>
+                  <li>Ciudad: Kinshasa</li>
+                  <li>Ámbito: Cultura</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
-                  Close Project</button>
+                  Cerrar Proyecto</button>
               </div>
             </div>
           </div>
@@ -838,18 +1094,22 @@ that it is adapted to the purposes, guidelines and criteria established in due c
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Communities</h2>
-                <p class="item-intro text-muted">Tha family space for excellence</p>
+                <h2 class="text-uppercase">Convivios</h2>
+                <p class="item-intro text-muted">El espacio propio de los más grandes</p>
                 <img class="img-fluid d-block mx-auto" src="img/portf2/con2.jpeg" alt="">
-                <p>In Fofasta we believe that the family is one of the most important parts of society. Thats why we promote community life for the families to gather and to share their experiences, and to help each other in their needs</p>
-                <ul class="list-inline">
-                  <li>Date: January 2015</li>
-                  <li>City: Kinshasa</li>
-                  <li>Ambit: Family</li>
+                <p class="modal-desc">El Convivio es un grupo natural de convivencia que se asienta sobre las
+                  dimensiones sacral y
+                  sapiencial de Fasta., y donde es posible fundar una comunidad sostenida por el ejercicio
+                  consciente y creciente de la amistad. Es además el espacio natural de inserción de los miembros de los
+                  adultos en la Institución.</p>
+                <ul class="list-inline modal-desc">
+                  <li>Fecha: Enero 2015</li>
+                  <li>Ciudad: Kinshasa</li>
+                  <li>Ámbito: Familia</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
-                  Close Project</button>
+                  Cerrar Proyecto</button>
               </div>
             </div>
           </div>
@@ -872,21 +1132,76 @@ that it is adapted to the purposes, guidelines and criteria established in due c
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Youth Centers</h2>
-                <p class="item-intro text-muted">Fasta's Rucas are the palce for the little ones.</p>
-                <video class="embed-responsive-item"  controls>
-                  <source src="img/juventudes.mp4">
-                  Your browser does not support the video tag.
-               </video>
-                <p>This space is thought to complement kids education from school and from their families. Kids got to the youth centers optionally if they want. In these centers kids learn important values, our goal is to forge liders with principles that love their country and want to see it moving forward. Leaders that can take care of the important roles of society. To guide their country to progress</p>
-                <ul class="list-inline">
-                  <li>Date: January 2018</li>
-                  <li>City: Kinshasa</li>
-                  <li>Ambit: Youth</li>
+                <h2 class="text-uppercase">Centros Juveniles</h2>
+                <p class="item-intro text-muted">Los rucas de Fasta son el ámbito de desarrollo propio de los jóvenes
+                </p>
+                <img class="img-fluid d-block mx-auto" src="img/Car1.jpg" alt="">
+                <p class="modal-desc">El Ruca o Centro juvenil es el ámbito de acción propio de los jóvenes de
+                  Fasta. Esta conducido
+                  por los propios jóvenes que promueven y sostienen obras apostólicas de la comunidad siendo un espacio
+                  particular de desarrollo juvenil.</p>
+                <ul class="list-inline modal-desc">
+                  <li>Fecha: Enero 2018</li>
+                  <li>Ciudad: Kinshasa</li>
+                  <li>Ámbito: Juventud</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
-                  Close Project</button>
+                  Cerrar Proyecto</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="portfolio-modal modal fade" id="docsModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Título de propiedad</h2>
+
+                <img class="img-fluid d-block mx-auto" src="docs/titulo-propiedad.jpg" alt="">
+
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Cerrar Documento</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="portfolio-modal modal fade" id="docsModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Reconocimiento de Fofasta en la ciudad de Kinshasa</h2>
+
+                <img class="img-fluid d-block mx-auto" src="docs/reconocimiento.png" alt="">
+
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Cerrar Documento</button>
               </div>
             </div>
           </div>
@@ -895,7 +1210,7 @@ that it is adapted to the purposes, guidelines and criteria established in due c
     </div>
   </div>
 
-  
+
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
@@ -907,6 +1222,7 @@ that it is adapted to the purposes, guidelines and criteria established in due c
   <!-- Contact form JavaScript -->
   <script src="js/jqBootstrapValidation.js"></script>
   <script src="js/contact_me.js"></script>
+
 
   <!-- Custom scripts for this template -->
   <script src="js/agency.js"></script>
