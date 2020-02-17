@@ -468,15 +468,15 @@ var gauge1 = Gauge(document.getElementById("gauge1"), {
     item.appendChild(tspan1);
     
     var tspan2 = document.createElementNS("http://www.w3.org/2000/svg", "tspan");
-    tspan2.textContent="de";
+    tspan2.textContent="/";
     tspan2.setAttribute('x',50);
-    tspan2.setAttribute('y',54);
+    tspan2.setAttribute('y',52);
     item.appendChild(tspan2);
 
     var tspan2 = document.createElementNS("http://www.w3.org/2000/svg", "tspan");
     tspan2.textContent="$"+632253;
     tspan2.setAttribute('x',50);
-    tspan2.setAttribute('y',64);
+    tspan2.setAttribute('y',66);
     item.appendChild(tspan2);
     
   }
