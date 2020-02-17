@@ -453,10 +453,10 @@ function sendEmail() {
 });
 
 var gauge1 = Gauge(document.getElementById("gauge1"), {
-  max: 600000,
+  max: 632253,
   dialStartAngle: -90,
   dialEndAngle: -90.001,
-  value: 498000,
+  value: 525650,
   label: function(item, value) {
     while (item.firstChild) {
       item.removeChild(item.firstChild);
@@ -474,7 +474,7 @@ var gauge1 = Gauge(document.getElementById("gauge1"), {
     item.appendChild(tspan2);
 
     var tspan2 = document.createElementNS("http://www.w3.org/2000/svg", "tspan");
-    tspan2.textContent="$"+6000000;
+    tspan2.textContent="$"+632253;
     tspan2.setAttribute('x',50);
     tspan2.setAttribute('y',64);
     item.appendChild(tspan2);
@@ -484,7 +484,7 @@ var gauge1 = Gauge(document.getElementById("gauge1"), {
 
 
 (function loop() {
-  var value1 = 498000
+  var value1 = 525650
     
 
   // setValueAnimated(value, durationInSecs);
