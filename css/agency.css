@@ -41,18 +41,19 @@ h6 {
 }
 .progress{
   margin-bottom: 3%;
-  height: 2rem;
-
+  height: 3rem;
+  margin-top: 13%;
+  font-size: 1rem;
 }
 
 
-.progress-bar {
+/* .progress-bar {
   width: 70%;
   font-size: 2rem;
   background-size: contain;
     background-blend-mode: unset;
   background-image:url(../img/brick.jpeg)
-}
+} */
 
 .donation-button{
   max-width: 120px;
