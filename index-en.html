@@ -8,6 +8,8 @@
   <meta name="description" content="Fofasta's  landing page">
   <meta name="author" content="jjaramil">
   <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script
+  src="https://www.paypal.com/sdk/js?client-id=AZL6qzmksgb4nFHwGrfS6NHokpwB3fKrNCK6XPfi0NodgavO8WI0deIVGJL59QOJamrjtdRghxlu2Sle"></script>
 
   <title>Fofasta - Fundation</title>
 
@@ -383,7 +385,7 @@
             Republic of the Congo.</h3>
         </div>
       </div>
-      <div class="row">
+      <!-- <div class="row">
         <form action="https://www.paypal.com/cgi-bin/webscr" class="donation-form" method="post" target="_top">
           <input type="hidden" name="cmd" value="_s-xclick" />
           <input type="hidden" name="hosted_button_id" value="VWHX4KREEY5BA" />
@@ -397,6 +399,27 @@
           </div>
 
         </form>
+      </div> -->
+      <div class="row">
+        <div class="col-md-8 donate-buttons">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">$</span>
+            </div>
+            <input type="text" class="form-control" id="donation-amount" onkeyup=checkDonationAmount(this) aria-label="Amount (to the nearest dollar)">
+            <div class="input-group-append">
+              <span class="input-group-text">.00</span>
+            </div>
+          </div>
+          <p>Insert the amount you wish to donate</p>
+        </div>
+      </div>
+      <div class="row">
+       
+        <div class="col-md-8 donate-buttons" >
+          <div class="disabled-overlay activate"></div>
+          <div id="pp-buttons-container"></div>
+        </div>
       </div>
       <div class="row progress-row">
         

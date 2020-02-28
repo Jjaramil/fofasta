@@ -8,7 +8,10 @@
   <meta name="description" content="Fofasta's  landing page">
   <meta name="author" content="jjaramil">
   <script src="https://smtpjs.com/v3/smtp.js"></script>
-  
+  <script
+    src="https://www.paypal.com/sdk/js?client-id=AZL6qzmksgb4nFHwGrfS6NHokpwB3fKrNCK6XPfi0NodgavO8WI0deIVGJL59QOJamrjtdRghxlu2Sle"></script>
+
+
   <title>Fofasta - Fundación</title>
 
   <!-- Bootstrap core CSS -->
@@ -73,11 +76,11 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="index-en.html"><img src="img/en.png" alt="" height="25"
                 width="30"></a>
-                
+
           </li>
           <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="index-fr.html"><img src="img/fr.png" alt="" height="25"
-            width="30"></a>
+            <a class="nav-link js-scroll-trigger" href="index-fr.html"><img src="img/fr.png" alt="" height="25"
+                width="30"></a>
           </li>
         </ul>
       </div>
@@ -159,8 +162,9 @@
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Formación de emprendedores</h2>
           <img class="img-fluid" src="img/emprend.jpeg" alt="">
-          <h3 class="section-subheading text-muted entrepeneur-info">Entre los principales objetivos de la fundación, está la formación de jóvenes emprendedores en tecnología digital, medioambiente y educación. 
-            Constituyendo esto un valioso aporte 
+          <h3 class="section-subheading text-muted entrepeneur-info">Entre los principales objetivos de la fundación,
+            está la formación de jóvenes emprendedores en tecnología digital, medioambiente y educación.
+            Constituyendo esto un valioso aporte
             para diversificar la economía, crear empleo sostenible y lograr mayores niveles de bienestar social.</h3>
         </div>
         <div class="col-lg-12 values">
@@ -385,58 +389,53 @@
         </div>
       </div>
       <div class="row">
-        <form action="https://www.paypal.com/cgi-bin/webscr" class="donation-form" method="post" target="_top">
-          <input type="hidden" name="cmd" value="_s-xclick" />
-          <input type="hidden" name="hosted_button_id" value="VWHX4KREEY5BA" />
-          <a class="btn btn-primary btn-xl text-uppercase donate-button" onclick="donate()">Donar con<span><img
-                class="donation-button" src="img/logos/paypallogo.png"></span> </a>
-          <div style="display: none;">
-            <input id="paypal-pay" type="image" src="https://www.paypalobjects.com/en_US/ES/i/btn/btn_donateCC_LG.gif"
-              border="0" name="submit" title="PayPal - The safer, easier way to pay online!"
-              alt="Donate with PayPal button" />
-            <img alt="" border="0" src="https://www.paypal.com/en_ES/i/scr/pixel.gif" width="1" height="1" />
+        <div class="col-md-8 donate-buttons">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">$</span>
+            </div>
+            <input type="text" class="form-control" id="donation-amount" onkeyup=checkDonationAmount(this) aria-label="Amount (to the nearest dollar)">
+            <div class="input-group-append">
+              <span class="input-group-text">.00</span>
+            </div>
           </div>
-
-        </form>
+          <p>Ingrese la cantidad que desea donar</p>
+        </div>
+      </div>
+      <div class="row">
+       
+        <div class="col-md-8 donate-buttons" >
+          <div class="disabled-overlay activate"></div>
+          <div id="pp-buttons-container"></div>
+        </div>
       </div>
 
       <div class="row progress-row">
-        
-      <div class="col-md-8">
-        <div class="progress">
-          <div class="progress-bar" role="progressbar" style="width: 27%" aria-valuenow="27" aria-valuemin="0" aria-valuemax="100">27% Patrocinadores</div>
-          <div class="progress-bar bg-success" role="progressbar" style="width:31%" aria-valuenow="31" aria-valuemin="0" aria-valuemax="100">31% Fondos propios</div>
-          <div class="progress-bar bg-info" role="progressbar" style="width: 42%" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100">42% Donaciones Recibidas</div>
-        </div>
 
-
-        <!-- <label class="progress-bar-label">Patrocinadores</label>
-        <div class="progress">
-          <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
-        </div>
-        <label class="progress-bar-label">Fondos propios</label>
-        <div class="progress">
-          <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
-        </div>
-        <label class="progress-bar-label">Donaciones personales</label>
-        <div class="progress">
-          <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">45%</div>
-        </div> -->
-      </div>
-      <div class="col-md-4">
-        <div class="card-deck text-center">
-          <div class="card mb-4 box-shadow bg-gradient">
-            <div class="card-body gauge-container" id="gauge1">
-            </div>
+        <div class="col-md-8">
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 27%" aria-valuenow="27" aria-valuemin="0"
+              aria-valuemax="100">27% Patrocinadores</div>
+            <div class="progress-bar bg-success" role="progressbar" style="width:31%" aria-valuenow="31"
+              aria-valuemin="0" aria-valuemax="100">31% Fondos propios</div>
+            <div class="progress-bar bg-info" role="progressbar" style="width: 42%" aria-valuenow="42" aria-valuemin="0"
+              aria-valuemax="100">42% Donaciones Recibidas</div>
           </div>
-       
+        </div>
+        <div class="col-md-4">
+          <div class="card-deck text-center">
+            <div class="card mb-4 box-shadow bg-gradient">
+              <div class="card-body gauge-container" id="gauge1">
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="col-md-12">
+          <h3 class="section-subheading2">Progreso de la recaudación de fondos para la construcción del colegio </h3>
+        </div>
       </div>
-     
-    </div>
-    <div class="col-md-12">
-      <h3 class="section-subheading2">Progreso de la recaudación de fondos para la construcción del colegio </h3>
-    </div>
-  </div>
 
   </section>
 
@@ -691,15 +690,16 @@
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <textarea class="form-control" id="message" name="message" placeholder="Mensaje *"
-                    required="required" data-validation-required-message="Please enter a message."></textarea>
+                  <textarea class="form-control" id="message" name="message" placeholder="Mensaje *" required="required"
+                    data-validation-required-message="Please enter a message."></textarea>
                   <p class="help-block text-danger"></p>
                 </div>
               </div>
               <div class="clearfix"></div>
               <div class="col-lg-12 text-center">
                 <div id="success"></div>
-                <button id="sendMessageButton" onclick="sendEmail()" class="btn btn-primary btn-xl text-uppercase" type="button">Enviar
+                <button id="sendMessageButton" onclick="sendEmail()" class="btn btn-primary btn-xl text-uppercase"
+                  type="button">Enviar
                   Mensaje</button>
               </div>
             </div>
@@ -1011,7 +1011,8 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-4">
-          <span class="copyright">Copyright &copy; Fofasta <script>document.write(new Date().getFullYear())</script></span>
+          <span class="copyright">Copyright &copy; Fofasta
+            <script>document.write(new Date().getFullYear())</script></span>
         </div>
         <div class="col-md-4">
           <ul class="list-inline social-buttons">
