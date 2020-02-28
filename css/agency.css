@@ -46,6 +46,11 @@ h6 {
   font-size: 1rem;
 }
 
+.alert-donation{
+  color: #ffffff;
+  background-color: #000000;
+}
+
 .activate{
   width: 96%;
   position: absolute;
