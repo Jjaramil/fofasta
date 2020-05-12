@@ -485,7 +485,7 @@ var gauge1 = Gauge(document.getElementById("gauge1"), {
   max: 632253,
   dialStartAngle: -90,
   dialEndAngle: -90.001,
-  value: 525650,
+  value: 537912,
   label: function(item, value) {
     while (item.firstChild) {
       item.removeChild(item.firstChild);
@@ -513,7 +513,7 @@ var gauge1 = Gauge(document.getElementById("gauge1"), {
 
 
 (function loop() {
-  var value1 = 525650
+  var value1 = 537912
     
 
   // setValueAnimated(value, durationInSecs);
