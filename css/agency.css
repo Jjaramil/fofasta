@@ -629,6 +629,10 @@ header.head .intro-text .intro-lead-in {
   }
 }
 
+.no-padding{
+  padding: 0;
+}
+
 .timeline-item{
   margin-bottom:1% !important;
 }
