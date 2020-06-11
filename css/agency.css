@@ -46,6 +46,11 @@ h6 {
   font-size: 1rem;
 }
 
+.video{
+  min-height: 100%;
+  min-width:  100%;
+}
+
 .alert-donation{
   color: #ffffff;
   background-color: #000000;
