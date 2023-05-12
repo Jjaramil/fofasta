@@ -236,10 +236,12 @@ font-family: montserrat;
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 25px;
-    padding-bottom: 25px;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
+  }
+  .logo{
+    max-height: 60px;
+    min-width: 155px;
   }
 
   #mainNav .navbar-brand {
@@ -511,6 +513,10 @@ header.head .intro-text .intro-lead-in {
   position: relative;
   min-height: 50px;
   margin-bottom: 50px;
+}
+.logo{
+  max-height: 98px;
+  min-width: 232px;
 }
 
 .timeline > li:after, .timeline > li:before {
@@ -848,6 +854,14 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 html {
   font-size: 14px;
+}
+@media (min-width:200px)and (  max-width:992px){
+  
+    .logo{
+      max-height: 60px;
+      min-width: 155px;
+    }
+
 }
 @media (min-width: 768px) {
   html {

@@ -29,7 +29,7 @@ function sendEmail() {
     SecureToken : "3fdec2ae-74a5-4ef3-8325-0547e3397bf2",
       To : 'jjosejaramillos@gmail.com',
       From : email,
-      Subject : "Fofasta recibio un nuevo mensaje",
+      Subject : "Fasta Kinshasa recibio un nuevo mensaje",
       Body : body
   }).then(
     message => alert(message)
