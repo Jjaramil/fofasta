@@ -32,7 +32,7 @@
         "@fortawesome/fontawesome-free": "5.10.2",
         "bootstrap": "4.3.1",
         "elasticemail-webapiclient": "^2.0.12",
-        "jquery": "3.4.1",
+        "jquery": "3.5.0",
         "jquery.easing": "^1.4.1",
         "paypal-nvp-api": "^1.3.0",
         "require": "^2.4.20"
